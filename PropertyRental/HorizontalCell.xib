@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ImageCell" id="KGk-i7-Jjw" customClass="HorizontalCell" customModule="PropertyRental">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="100"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="28N-DG-yvC">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeT-Md-KdS" userLabel="mainView">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kid1.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="YWr-hL-SwM">
+                                        <rect key="frame" x="0.0" y="1" width="100" height="98"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="GxN-5V-NtO"/>
+                                            <constraint firstAttribute="height" constant="98" id="cBa-xq-K0j"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kid2.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="DMa-Wr-hQ1">
+                                        <rect key="frame" x="112" y="0.0" width="100" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="99" id="gqW-Fc-9fk"/>
+                                            <constraint firstAttribute="width" constant="100" id="ocB-C9-5oh"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="kid3.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="ji7-ST-y2b">
+                                        <rect key="frame" x="220" y="0.0" width="100" height="99"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="99" id="xXF-0J-zCc"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="ji7-ST-y2b" secondAttribute="trailing" id="4Zl-GL-oyi"/>
+                                    <constraint firstItem="ji7-ST-y2b" firstAttribute="leading" secondItem="DMa-Wr-hQ1" secondAttribute="trailing" constant="8" id="4vw-bT-w9Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="ji7-ST-y2b" secondAttribute="bottom" id="62Q-e2-LCj"/>
+                                    <constraint firstItem="DMa-Wr-hQ1" firstAttribute="leading" secondItem="YWr-hL-SwM" secondAttribute="trailing" constant="12" id="Ank-tJ-FUk"/>
+                                    <constraint firstItem="ji7-ST-y2b" firstAttribute="leading" secondItem="DMa-Wr-hQ1" secondAttribute="trailing" constant="8" id="JsX-K3-8P6"/>
+                                    <constraint firstItem="ji7-ST-y2b" firstAttribute="top" secondItem="FeT-Md-KdS" secondAttribute="top" id="MbW-eG-Xvt"/>
+                                    <constraint firstItem="DMa-Wr-hQ1" firstAttribute="leading" secondItem="YWr-hL-SwM" secondAttribute="trailing" constant="12" id="bk6-ze-U68"/>
+                                    <constraint firstItem="YWr-hL-SwM" firstAttribute="top" secondItem="FeT-Md-KdS" secondAttribute="top" constant="1" id="cJV-9W-4Hu"/>
+                                    <constraint firstItem="DMa-Wr-hQ1" firstAttribute="top" secondItem="FeT-Md-KdS" secondAttribute="top" id="j8U-mK-bTO"/>
+                                    <constraint firstItem="YWr-hL-SwM" firstAttribute="leading" secondItem="FeT-Md-KdS" secondAttribute="leading" id="w8k-Oe-SyJ"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="FeT-Md-KdS" firstAttribute="leading" secondItem="28N-DG-yvC" secondAttribute="leading" id="Jhh-VI-Zii"/>
+                            <constraint firstItem="FeT-Md-KdS" firstAttribute="centerX" secondItem="28N-DG-yvC" secondAttribute="centerX" id="KPp-3i-fEX"/>
+                            <constraint firstItem="FeT-Md-KdS" firstAttribute="top" secondItem="28N-DG-yvC" secondAttribute="top" id="RFs-Rm-MiJ"/>
+                            <constraint firstAttribute="trailing" secondItem="FeT-Md-KdS" secondAttribute="trailing" id="h7g-oG-Zei"/>
+                            <constraint firstAttribute="bottom" secondItem="FeT-Md-KdS" secondAttribute="bottom" id="mWj-dE-d6u"/>
+                        </constraints>
+                    </scrollView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="28N-DG-yvC" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Blt-E6-Mza"/>
+                    <constraint firstAttribute="trailing" secondItem="28N-DG-yvC" secondAttribute="trailing" id="RsC-uh-zj4"/>
+                    <constraint firstItem="28N-DG-yvC" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="udF-vD-LM2"/>
+                    <constraint firstAttribute="bottom" secondItem="28N-DG-yvC" secondAttribute="bottom" id="unm-Xh-pcX"/>
+                </constraints>
+            </tableViewCellContentView>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="kid1.jpeg" width="284" height="177"/>
+        <image name="kid2.jpeg" width="276" height="183"/>
+        <image name="kid3.jpeg" width="259" height="194"/>
+    </resources>
+</document>
