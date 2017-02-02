@@ -9,12 +9,18 @@
 import UIKit
 
 class LogoutVc: UIViewController {
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+    
+    
+    @IBOutlet weak var gotoUrl: UIButton!
+    
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
